@@ -248,7 +248,9 @@ class TextformatterFindReplace extends Textformatter implements Module, Configur
 		$f->description = 
 			'Enter one per line of: `find=replace` or `/find/=replace`, where `find` is a string to find *or* `/find/` ' . 
 			'is a regular expression pattern to match, and `replace` is a replacement string. ' . 
-			'Please see the [usage instructions](#) for full details and options.';
+			'Please see the [usage instructions](https://github.com/ryancramerdesign/TextformatterFindReplace#usage) ' . 
+			'and [examples](https://github.com/ryancramerdesign/TextformatterFindReplace#examples) ' . 
+			'for full details and options.';
 		$f->attr('style', 'font-family: monospace; white-space: nowrap'); 
 		$f->val($this->patterns);
 		$f->attr('rows', ($qty >= 5 ? $qty+2 : 5)); 
